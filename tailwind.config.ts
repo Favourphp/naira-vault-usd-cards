@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -52,6 +53,32 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				nairablue: {
+          DEFAULT: '#0A2540',
+          50: '#E5F0FF',
+          100: '#CCE1FF',
+          200: '#99C3FF',
+          300: '#66A5FF',
+          400: '#3387FF',
+          500: '#0069FF',
+          600: '#0054CC',
+          700: '#003F99',
+          800: '#002A66',
+          900: '#001533',
+        },
+        nairagreen: {
+          DEFAULT: '#00D54B',
+          50: '#E6FFF0',
+          100: '#CCFFE2',
+          200: '#99FFC4',
+          300: '#66FFA7',
+          400: '#33FF89',
+          500: '#00FF6C',
+          600: '#00CC56',
+          700: '#009940',
+          800: '#00662B',
+          900: '#003315',
+        },
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -84,11 +111,19 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'pulse-slow': {
+					'0%, 100%': { opacity: '1' },
+					'50%': { opacity: '0.5' },
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'pulse-slow': 'pulse-slow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+			},
+			fontFamily: {
+				sans: ['Inter var', 'sans-serif'],
 			}
 		}
 	},
